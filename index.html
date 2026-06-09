@@ -14,7 +14,22 @@
           <h1 class="logo__title">Cozy House</h1>
           <p class="logo__text">Shelter for pets in Boston</p>
         </div>
-        <div class="burger"></div>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__link">
+              <a href="#about">About the shelter</a>
+            </li>
+            <li class="navigation__link">
+              <a href="./pets.html">Our pets</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#help">Help the shelter</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="start-screen">
         <div class="start__content">
@@ -31,8 +46,11 @@
     </div>
   </header>
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper about__wrapper">
+        <div class="about__img">
+          <img src="./assets/img/about/about-pets.png" alt="">
+        </div>
         <div class="about__content">
           <h2 class="about__title">About the shelter
             “Cozy House”</h2>
@@ -42,12 +60,44 @@
             We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff.
             Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
         </div>
-        <div class="about__img">
-          <img src="./assets/img/about/about-pets.png" alt="">
+      </div>
+    </section>
+    <section class="pets" id="pets">
+      <div class="wrapper pets__wrapper">
+        <div class="pets__content">
+          <h2 class="pets__title">Our friends who
+            are looking for a house</h2>
+          <div class="slider">
+            <button class="button button-left"></button>
+            <div class="slider__content">
+              <div class="card">
+                <div class="card__image">
+                  <img src="./assets/img/pets/pets-katrine.png" alt="Cat Katrine">
+                </div>
+                <div class="card__name">Katrine</div>
+                <button class="button card__button">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img src="./assets/img/pets/pets-jennifer.png" alt="Dog Jennifer">
+                </div>
+                <div class="card__name">Jennifer</div>
+                <button class="button card__button">Learn more</button>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img src="./assets/img/pets/pets-woody.png" alt="Dog Woody">
+                </div>
+                <div class="card__name">Woody</div>
+                <button class="button card__button">Learn more</button>
+              </div>
+            </div>
+            <button class="button button-right"></button>
+          </div>
+          <button class="button">Get to know the rest</button>
         </div>
       </div>
     </section>
-    <section class=""></section>
     <section class=""></section>
     <section class=""></section>
   </main>
