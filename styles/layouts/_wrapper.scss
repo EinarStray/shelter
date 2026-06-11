@@ -1,0 +1,8 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+.wrapper {
+  max-width: constants.$content-width;
+  margin: auto;
+  overflow-x: hidden;
+}
