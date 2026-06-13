@@ -12,6 +12,18 @@
   margin: 0;
   text-align: center;
   padding: 1.5rem 4.5rem;
-  background: constants.$color-primary;
+  border: 1px solid constants.$color-primary;
   border-radius: 30px;
+}
+
+.button-color {
+  background: constants.$color-primary;
+}
+
+.button-svg {
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  border: 1px solid constants.$color-primary;
+  padding-bottom: 6px;
 }

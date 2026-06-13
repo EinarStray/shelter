@@ -1,0 +1,28 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.pets {
+  background: constants.$color-bg-white-dark;
+}
+
+.pets__wrapper {
+  padding: 7.5rem 4rem 10rem 4rem;
+}
+
+.pets__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.pets__title {
+  color: constants.$color-text-dark-h2;
+  width: 50%;
+  text-align: center;
+}
