@@ -1,0 +1,17 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.button {
+  @include mixins.font(400, 1.7rem, 130%, Georgia);
+  color: constants.$color-text-dark-btn;
+  letter-spacing: 6%;
+  margin: 0;
+  text-align: center;
+  padding: 1.5rem 4.5rem;
+  background: constants.$color-primary;
+  border-radius: 30px;
+}

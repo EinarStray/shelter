@@ -14,7 +14,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 9rem;
-  padding: 4rem 3rem 0;
+  padding: 3rem 4rem 0;
 }
 
 .header {
@@ -52,6 +52,7 @@
   align-items: center;
   gap: 3.5rem;
   list-style: none;
+  padding: 0;
 }
 
 .navigation__link:first-child a{
@@ -64,6 +65,7 @@
   @include mixins.font(400, 1.5rem, 160%);
   color: constants.$color-text-dark-s;
   letter-spacing: 0;
+  padding-bottom: 0.3rem;
   @extend %transition;
 
   &:hover {
@@ -78,8 +80,29 @@
 
 .start-screen {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+.start__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4.2rem;
+  padding-bottom: 7.2rem;
+}
+
+.start__title {
+  width: 70%;
 }
 
 .start__text {
   color: constants.$color-text-dark-s;
+}
+
+.start__img {
+  display: flex;
+  align-items: flex-end;
 }

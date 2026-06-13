@@ -10,11 +10,11 @@ body {
   @include mixins.font(400, 1.5rem, 160%);
   color: constants.$color-text-dark;
   letter-spacing: 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: left;
 }
 
-p {
+p, ul {
   margin: 0;
 }
 
