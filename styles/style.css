@@ -235,6 +235,36 @@ h2 {
   border-radius: 30px;
 }
 
+.about {
+  background: #ffffff;
+}
+
+.about__wrapper {
+  padding: 8rem 4rem 10rem 4rem;
+}
+
+.about__container {
+  padding: 0 17.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.4rem;
+  padding-bottom: 0.3rem;
+  width: 50.5%;
+}
+
+.about__title {
+  color: #545454;
+  width: 80%;
+}
+
 .navigation__link a {
   transition: all 0.2s ease-in-out;
 }
