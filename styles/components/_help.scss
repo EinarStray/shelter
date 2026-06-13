@@ -1,0 +1,55 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.help__wrapper {
+  padding: 7.5rem 4rem 10rem 4rem;
+}
+
+.help__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: 0 8.7rem;
+}
+
+.help__title {
+  color: constants.$color-text-dark-h2;
+  width: 35%;
+  text-align: center;
+}
+
+.help__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+
+.grid-row-top, .grid-row-bottom {
+  display: flex;
+  gap: 12rem;
+  justify-content: space-between;
+}
+
+.grid-row-bottom {
+  padding: 0 8.4rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.item__title {
+  @include mixins.font(400, 2rem, 115%, Georgia);
+  color: constants.$color-text-dark-h2;
+  letter-spacing: 6%;
+  text-wrap: nowrap;
+}
