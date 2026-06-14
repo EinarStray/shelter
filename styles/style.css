@@ -1,0 +1,749 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  font-family: Arial, sans-serif;
+  color: #4c4c4c;
+  letter-spacing: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+p, ul {
+  margin: 0;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.4rem;
+  line-height: 130%;
+  font-family: Georgia, sans-serif;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: 0;
+  text-align: left;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 130%;
+  font-family: Georgia, sans-serif;
+  color: #ffffff;
+  letter-spacing: 6%;
+  margin: 0;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 130%;
+  font-family: Georgia, sans-serif;
+  color: #292929;
+  letter-spacing: 6%;
+  margin: 0;
+  text-align: center;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid #f1cdb3;
+  border-radius: 30px;
+}
+
+.button-color {
+  background: #f1cdb3;
+}
+
+.button-svg {
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  border: 1px solid #f1cdb3;
+  padding-bottom: 6px;
+}
+
+.pets-pets .button-svg {
+  padding: 0;
+  border: 2px solid #f1cdb3;
+  cursor: pointer;
+}
+
+.pets-pets .button-svg.disabled {
+  padding: 0;
+  border: 2px solid #cdcdcd;
+  pointer-events: none;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.3rem;
+}
+
+.slider__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.3rem;
+  padding-bottom: 3rem;
+}
+.card:hover .card__button {
+  background: #f1cdb3;
+}
+
+.card__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 100%;
+  font-family: Georgia, sans-serif;
+  color: #545454;
+  letter-spacing: 6%;
+  padding-bottom: 0.8rem;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  background: #ffffff;
+}
+
+.about__wrapper {
+  padding: 8rem 4rem 10rem 4rem;
+}
+
+.about__container {
+  padding: 0 17.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.4rem;
+  padding-bottom: 0.3rem;
+  width: 50.5%;
+}
+
+.about__title {
+  color: #545454;
+  width: 80%;
+}
+
+.pets {
+  background: #f6f6f6;
+}
+
+.pets__wrapper {
+  padding: 7.5rem 4rem 10rem 4rem;
+}
+
+.pets__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.pets__title {
+  color: #545454;
+  width: 50%;
+  text-align: center;
+}
+
+.help__wrapper {
+  padding: 7.5rem 4rem 10rem 4rem;
+}
+
+.help__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  padding: 0 8.7rem;
+}
+
+.help__title {
+  color: #545454;
+  width: 35%;
+  text-align: center;
+}
+
+.help__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+
+.grid-row-top, .grid-row-bottom {
+  display: flex;
+  gap: 12rem;
+  justify-content: space-between;
+}
+
+.grid-row-bottom {
+  padding: 0 8.4rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.item__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  font-family: Georgia, sans-serif;
+  color: #545454;
+  letter-spacing: 6%;
+  text-wrap: nowrap;
+}
+
+.donation {
+  background: #f6f6f6;
+}
+
+.donation__wrapper {
+  padding: 8rem 18.2rem 10rem 18.3rem;
+}
+
+.donation-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.donation__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.donation__title {
+  color: #545454;
+  width: 80%;
+  text-align: left;
+}
+
+.donation__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 110%;
+  font-family: Georgia, sans-serif;
+  color: #545454;
+  letter-spacing: 6%;
+}
+
+.donation__card {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  font-family: Georgia, sans-serif;
+  color: #545454;
+  background-color: #f1cdb3;
+  border-radius: 10px;
+  letter-spacing: 6%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+.donation__card svg {
+  margin-right: 0.9rem;
+  margin-bottom: -0.5rem;
+}
+
+.donation__info {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  font-family: Arial, sans-serif;
+  color: #b2b2b2;
+  letter-spacing: 0;
+}
+
+.donation__img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.pets-pets {
+  background: #f6f6f6;
+}
+
+.pets-pets .pets__wrapper {
+  padding: 8rem 4rem 10rem 4rem;
+}
+
+.pets-pets .pets__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+.pets-pets .pets__title {
+  color: #545454;
+  width: 50%;
+  text-align: center;
+}
+.pets-pets .pets__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+  row-gap: 3rem;
+}
+.pets-pets .grid-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navigation__link a {
+  transition: all 0.2s ease-in-out;
+}
+
+.header__wrapper {
+  background: url("../../assets/img/icons/noise_transparent.svg") repeat, linear-gradient(135deg, #574635 0%, #020100 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9rem;
+  padding: 3rem 4rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 57.3rem;
+  text-wrap: nowrap;
+}
+.header a {
+  text-decoration: none;
+}
+
+.logo__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 110%;
+  font-family: Georgia, sans-serif;
+  color: #f1cdb3;
+  letter-spacing: 6%;
+}
+
+.logo__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 100%;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  letter-spacing: 10%;
+  padding-top: 1rem;
+}
+
+.header__navigation {
+  width: 100%;
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__link a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  font-family: Arial, sans-serif;
+  color: #cdcdcd;
+  letter-spacing: 0;
+  padding-bottom: 0.3rem;
+}
+.navigation__link a:hover {
+  color: #fafafa;
+}
+.navigation__link a:active {
+  color: #fafafa;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.navigation__link.active {
+  color: #fafafa;
+  border-bottom: 3px solid #f1cdb3;
+  pointer-events: none;
+}
+
+.start-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+.start__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4.2rem;
+  padding-bottom: 7.2rem;
+}
+
+.start__title {
+  width: 70%;
+}
+
+.start__text {
+  color: #cdcdcd;
+}
+
+.start__img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.footer__wrapper {
+  background: url("../../assets/img/icons/noise_transparent.svg") repeat, linear-gradient(135deg, #574635 0%, #020100 100%);
+  display: flex;
+  flex-direction: row;
+  gap: 16rem;
+  padding: 4rem 4rem 0 4rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+  padding-top: 1.6rem;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  font-family: Georgia, sans-serif;
+  letter-spacing: 6%;
+}
+.footer__item a {
+  text-decoration: none;
+  color: #f1cdb3;
+}
+.footer__item a svg {
+  margin-right: 1.3rem;
+  margin-bottom: -0.8rem;
+}
+
+.visit {
+  padding-right: 1.44rem;
+}
+
+.boston__address {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: -8px;
+}
+
+.boston {
+  width: 115%;
+  height: 10%;
+}
+.boston a {
+  display: inline-flex;
+}
+
+.nowrap {
+  text-wrap: nowrap;
+}
+
+.london {
+  width: 102%;
+}
+
+.footer__img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.pets-header .navigation__link a {
+  transition: all 0.2s ease-in-out;
+}
+
+.pets-header__wrapper {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9rem;
+  padding: 3rem 4rem;
+}
+
+.pets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 57.3rem;
+  text-wrap: nowrap;
+}
+.pets-header a {
+  text-decoration: none;
+}
+.pets-header .logo h1, .pets-header .logo p {
+  color: #545454;
+}
+
+.pets-header .navigation__link a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  font-family: Arial, sans-serif;
+  color: #545454;
+  letter-spacing: 0;
+  padding-bottom: 0.3rem;
+}
+.pets-header .navigation__link a:hover {
+  color: #292929;
+}
+.pets-header .navigation__link a:active {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.pets-header .navigation__link.active {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */

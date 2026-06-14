@@ -1,0 +1,9 @@
+@use "./constants";
+
+@mixin font ($weight, $size, $lineHeight, $fontFamily: Arial, $style: normal) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-family: $fontFamily, sans-serif;
+}

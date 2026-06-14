@@ -1,0 +1,108 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.header__wrapper {
+  background:
+          url("../../assets/img/icons/noise_transparent.svg") repeat,
+          linear-gradient(135deg, #574635 0%, #020100 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9rem;
+  padding: 3rem 4rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 57.3rem;
+  text-wrap: nowrap;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo__title {
+  @include mixins.font(400, 3.2rem, 110%, Georgia);
+  color: constants.$color-primary;
+  letter-spacing: 6%;
+}
+
+.logo__text {
+  @include mixins.font(400, 1.3rem, 100%);
+  color: constants.$color-white;
+  letter-spacing: 10%;
+  padding-top: 1rem;
+}
+
+.header__navigation {
+  width: 100%;
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__link a {
+  @include mixins.font(400, 1.5rem, 160%);
+  color: constants.$color-text-dark-s;
+  letter-spacing: 0;
+  padding-bottom: 0.3rem;
+  @extend %transition;
+
+  &:hover {
+    color: constants.$color-white-h;
+  }
+
+  &:active {
+    color: constants.$color-white-h;
+    border-bottom: 3px solid constants.$color-primary;
+  }
+}
+
+.navigation__link.active {
+  color: constants.$color-white-h;
+  border-bottom: 3px solid constants.$color-primary;
+  pointer-events: none;
+}
+
+.start-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+.start__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4.2rem;
+  padding-bottom: 7.2rem;
+}
+
+.start__title {
+  width: 70%;
+}
+
+.start__text {
+  color: constants.$color-text-dark-s;
+}
+
+.start__img {
+  display: flex;
+  align-items: flex-end;
+}
