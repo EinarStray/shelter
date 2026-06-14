@@ -5,11 +5,15 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <title>Pets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header>
-  <div class="wrapper header__wrapper">
-    <div class="header">
+  <div class="wrapper pets-header__wrapper">
+    <div class="pets-header">
       <a href="index.html">
         <div class="logo">
           <h1 class="logo__title">Cozy House</h1>
@@ -21,7 +25,7 @@
           <li class="navigation__link">
             <a href="./index.html">About the shelter</a>
           </li>
-          <li class="navigation__link">
+          <li class="navigation__link active">
             <a href="">Our pets</a>
           </li>
           <li class="navigation__link">
@@ -36,11 +40,11 @@
   </div>
 </header>
 <main>
-  <section class="pets" id="pets">
+  <section class="pets-pets" id="pets">
     <div class="wrapper pets__wrapper">
       <div class="pets__content">
         <h2 class="pets__title">Our friends who
-          are looking for a house</h2>
+          <span class="nowrap">are looking for a house</span></h2>
         <div class="pets__grid">
           <div class="card">
             <div class="card__image">
@@ -61,6 +65,13 @@
               <img src="./assets/img/pets/pets-woody.png" alt="Dog Woody">
             </div>
             <div class="card__name">Woody</div>
+            <button class="button card__button">Learn more</button>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./assets/img/pets/pets-sophia.png" alt="Dog Sophia">
+            </div>
+            <div class="card__name">Sophia</div>
             <button class="button card__button">Learn more</button>
           </div>
           <div class="card">
@@ -92,7 +103,33 @@
             <button class="button card__button">Learn more</button>
           </div>
         </div>
-        <button class="button">Get to know the rest</button>
+        <div class="grid-buttons">
+          <button class="button-svg disabled">
+            <svg width="24" height="11" viewBox="0 0 24 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.0333 10.498L9.72748e-05 5.80078V4.69727L9.0333 0V1.33789L1.52353 5.24414L9.0333 9.16016V10.498ZM23.1044 10.498L14.0712 5.80078V4.69727L23.1044 0V1.33789L15.5946 5.24414L23.1044 9.16016V10.498Z" fill="#CDCDCD"/>
+            </svg>
+          </button>
+          <button class="button-svg disabled">
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.0332 10.498L0 5.80078V4.69727L9.0332 0V1.33789L1.52344 5.24414L9.0332 9.16016V10.498Z" fill="#CDCDCD"/>
+            </svg>
+          </button>
+          <button class="button-svg">
+            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.62109 10.791H0.0390625V10.0977C0.234375 10.0846 0.537109 10.0586 0.947266 10.0195C1.36393 9.97396 1.65039 9.92839 1.80664 9.88281C2.00846 9.81771 2.16146 9.71354 2.26562 9.57031C2.3763 9.42057 2.43164 9.19922 2.43164 8.90625V2.05078H0V1.23047H0.537109C1.24023 1.23047 1.86849 1.10026 2.42188 0.839844C2.98177 0.579427 3.38216 0.299479 3.62305 0H4.43359C4.41406 0.423177 4.39453 0.917969 4.375 1.48438C4.35547 2.05078 4.3457 2.55859 4.3457 3.00781V8.79883C4.3457 9.02669 4.39453 9.23177 4.49219 9.41406C4.59635 9.58984 4.74284 9.72005 4.93164 9.80469C5.10091 9.8763 5.3776 9.94141 5.76172 10C6.14583 10.0586 6.43229 10.0911 6.62109 10.0977V10.791Z" fill="#292929"/>
+            </svg>
+          </button>
+          <button class="button-svg">
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.0332 5.80078L0 10.498V9.16016L7.50977 5.24414L0 1.33789V0L9.0332 4.69727V5.80078Z" fill="#292929"/>
+            </svg>
+          </button>
+          <button class="button-svg">
+            <svg width="24" height="11" viewBox="0 0 24 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.0333 5.80078L9.72748e-05 10.498V9.16016L7.50986 5.24414L9.72748e-05 1.33789V0L9.0333 4.69727V5.80078ZM23.1044 5.80078L14.0712 10.498V9.16016L21.581 5.24414L14.0712 1.33789V0L23.1044 4.69727V5.80078Z" fill="#292929"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -122,26 +159,28 @@
         </a>
       </div>
     </div>
-    <div class="footer__content">
+    <div class="footer__content visit">
       <h2 class="footer__title">We are waiting for your visit</h2>
-      <div class="footer__item">
+      <div class="footer__item boston">
         <a href="https://www.google.com/maps/@65.0309849,-16.734171,6764m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
-           target="_blank">
+           target="_blank" class="footer__link">
           <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 0C4.93471 0 0 4.78519 0 10.6667C0 12.4323 0.455231 14.1829 1.32064 15.7357L10.3985 31.6562C10.5193 31.8685 10.7496 32 11 32C11.2504 32 11.4807 31.8685 11.6015 31.6562L20.6827 15.7304C21.5448 14.1829 22 12.4323 22 10.6666C22 4.78519 17.0653 0 11 0ZM19.4762 15.0905L11 29.9557L2.52714 15.0964C1.77317 13.7435 1.37504 12.2116 1.37504 10.6667C1.37504 5.52019 5.69275 1.33337 11 1.33337C16.3073 1.33337 20.625 5.52025 20.625 10.6667C20.625 12.2116 20.2268 13.7435 19.4762 15.0905Z" fill="#F1CDB3"/>
             <path d="M11 5.33329C7.96737 5.33329 5.50005 7.72585 5.50005 10.6666C5.50005 13.6074 7.96737 16 11 16C14.0327 16 16.5 13.6074 16.5 10.6667C16.5 7.72592 14.0327 5.33329 11 5.33329ZM11 14.6667C8.72534 14.6667 6.87502 12.8724 6.87502 10.6667C6.87502 8.46092 8.72534 6.66667 11 6.66667C13.2747 6.66667 15.125 8.46092 15.125 10.6667C15.125 12.8724 13.2747 14.6667 11 14.6667Z" fill="#F1CDB3"/>
           </svg>
-          1 Central Street, Boston (entrance from the store)
+          <span class="boston__address">
+              <span class="nowrap" style="margin-left: 5px;">1 Central Street, Boston</span><span class="nowrap">(entrance from the store)</span>
+            </span>
         </a>
       </div>
-      <div class="footer__item">
+      <div class="footer__item london">
         <a href="https://www.google.com/maps/@65.0309849,-16.734171,6764m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
            target="_blank">
           <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 0C4.93471 0 0 4.78519 0 10.6667C0 12.4323 0.455231 14.1829 1.32064 15.7357L10.3985 31.6562C10.5193 31.8685 10.7496 32 11 32C11.2504 32 11.4807 31.8685 11.6015 31.6562L20.6827 15.7304C21.5448 14.1829 22 12.4323 22 10.6666C22 4.78519 17.0653 0 11 0ZM19.4762 15.0905L11 29.9557L2.52714 15.0964C1.77317 13.7435 1.37504 12.2116 1.37504 10.6667C1.37504 5.52019 5.69275 1.33337 11 1.33337C16.3073 1.33337 20.625 5.52025 20.625 10.6667C20.625 12.2116 20.2268 13.7435 19.4762 15.0905Z" fill="#F1CDB3"/>
             <path d="M11 5.33329C7.96737 5.33329 5.50005 7.72585 5.50005 10.6666C5.50005 13.6074 7.96737 16 11 16C14.0327 16 16.5 13.6074 16.5 10.6667C16.5 7.72592 14.0327 5.33329 11 5.33329ZM11 14.6667C8.72534 14.6667 6.87502 12.8724 6.87502 10.6667C6.87502 8.46092 8.72534 6.66667 11 6.66667C13.2747 6.66667 15.125 8.46092 15.125 10.6667C15.125 12.8724 13.2747 14.6667 11 14.6667Z" fill="#F1CDB3"/>
           </svg>
-          18 South Park, London
+          <span class="nowrap">18 South Park, London</span>
         </a>
       </div>
     </div>

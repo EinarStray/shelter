@@ -1,0 +1,56 @@
+@use "../../abstracts/constants";
+@use "../../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.pets-header__wrapper {
+  background: constants.$color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9rem;
+  padding: 3rem 4rem;
+}
+
+.pets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 57.3rem;
+  text-wrap: nowrap;
+  a {
+    text-decoration: none;
+  }
+  .logo {
+    h1, p {
+      color: constants.$color-text-dark-h2;
+    }
+  }
+}
+
+.pets-header .navigation__link a {
+  @include mixins.font(400, 1.5rem, 160%);
+  color: constants.$color-text-dark-h2;
+  letter-spacing: 0;
+  padding-bottom: 0.3rem;
+  @extend %transition;
+
+  &:hover {
+    color: constants.$color-text-dark-btn;
+  }
+
+  &:active {
+    color: constants.$color-text-dark-btn;
+    border-bottom: 3px solid constants.$color-primary;
+  }
+}
+
+.pets-header .navigation__link.active {
+  color: constants.$color-text-dark-btn;
+  border-bottom: 3px solid constants.$color-primary;
+  pointer-events: none;
+}

@@ -16,8 +16,10 @@
 @use "components/pets";
 @use "components/help";
 @use "components/donation";
+@use "components/pets/pets-pets";
 
 //Layouts
 @use "layouts/header";
 @use "layouts/wrapper";
 @use "layouts/footer";
+@use "layouts/pets/pets-header";

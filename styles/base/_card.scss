@@ -12,6 +12,12 @@ display: flex;
   justify-content: flex-start;
   gap: 2.3rem;
   padding-bottom: 3rem;
+
+  &:hover {
+    .card__button {
+      background: constants.$color-primary;
+    }
+  }
 }
 
 .card__name {
