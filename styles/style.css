@@ -515,8 +515,11 @@ h2 {
   transition: all 0.2s ease-in-out;
 }
 
-.header__wrapper {
+.header {
   background: url("../../assets/img/icons/noise_transparent.svg") repeat, linear-gradient(135deg, #574635 0%, #020100 100%);
+}
+
+.header__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -525,7 +528,7 @@ h2 {
   padding: 3rem 4rem 0;
 }
 
-.header {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -533,7 +536,7 @@ h2 {
   gap: 57.3rem;
   text-wrap: nowrap;
 }
-.header a {
+.header__container a {
   text-decoration: none;
 }
 
@@ -630,8 +633,11 @@ h2 {
   overflow-x: hidden;
 }
 
-.footer__wrapper {
+.footer {
   background: url("../../assets/img/icons/noise_transparent.svg") repeat, linear-gradient(135deg, #574635 0%, #020100 100%);
+}
+
+.footer__wrapper {
   display: flex;
   flex-direction: row;
   gap: 16rem;

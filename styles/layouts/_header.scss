@@ -5,10 +5,13 @@
   transition: all 0.2s ease-in-out;
 }
 
-.header__wrapper {
+.header {
   background:
           url("../../assets/img/icons/noise_transparent.svg") repeat,
           linear-gradient(135deg, #574635 0%, #020100 100%);
+}
+
+.header__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -17,7 +20,7 @@
   padding: 3rem 4rem 0;
 }
 
-.header {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
