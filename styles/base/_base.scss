@@ -23,7 +23,11 @@ h1 {
   color: constants.$color-white;
   letter-spacing: 0;
   margin: 0;
-  text-align: left;
+
+  @include mixins.media-mobile {
+    @include mixins.font(400, 2.5rem, 130%, Georgia);
+    letter-spacing: 6%;
+  }
 }
 
 h2 {
