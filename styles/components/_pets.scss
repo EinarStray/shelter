@@ -11,6 +11,10 @@
 
 .pets__wrapper {
   padding: 7.5rem 4rem 10rem 4rem;
+
+  @include mixins.media-tablet {
+    padding: 8rem 3rem 10rem;
+  }
 }
 
 .pets__content {
@@ -25,4 +29,8 @@
   color: constants.$color-text-dark-h2;
   width: 50%;
   text-align: center;
+
+  @include mixins.media-tablet {
+    width: 100%;
+  }
 }

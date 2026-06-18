@@ -230,6 +230,10 @@ h2 {
 }
 
 .button {
+  transition: all 0.2s ease-in-out;
+}
+
+.button {
   font-style: normal;
   font-weight: 400;
   font-size: 1.7rem;
@@ -275,12 +279,26 @@ h2 {
   justify-content: space-between;
   gap: 5.3rem;
 }
+@media (max-width: 768px) {
+  .slider {
+    gap: 1.2rem;
+  }
+}
 
 .slider__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 9rem;
+}
+@media (max-width: 768px) {
+  .slider__content {
+    gap: 4rem;
+  }
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
 }
 
 .card {
@@ -290,9 +308,24 @@ h2 {
   justify-content: flex-start;
   gap: 2.3rem;
   padding-bottom: 3rem;
+  background-color: #fafafa;
+}
+.card:hover {
+  background-color: #ffffff;
 }
 .card:hover .card__button {
   background: #f1cdb3;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card.third {
+    display: none;
+  }
 }
 
 .card__name {
@@ -355,7 +388,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .about__wrapper {
-    padding: 8rem 16.6rem 10rem 16.5rem;
+    padding: 8rem 16.6rem 9rem 16.5rem;
   }
 }
 
@@ -407,6 +440,11 @@ h2 {
 .pets__wrapper {
   padding: 7.5rem 4rem 10rem 4rem;
 }
+@media (max-width: 768px) {
+  .pets__wrapper {
+    padding: 8rem 3rem 10rem;
+  }
+}
 
 .pets__content {
   display: flex;
@@ -420,6 +458,11 @@ h2 {
   color: #545454;
   width: 50%;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .pets__title {
+    width: 100%;
+  }
 }
 
 .help__wrapper {

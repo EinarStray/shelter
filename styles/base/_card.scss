@@ -12,11 +12,26 @@ display: flex;
   justify-content: flex-start;
   gap: 2.3rem;
   padding-bottom: 3rem;
+  background-color: constants.$color-white-h;
+
+  @extend %transition;
 
   &:hover {
+    background-color: constants.$color-white;
+
     .card__button {
       background: constants.$color-primary;
     }
+  }
+
+  @include mixins.media-tablet {
+    width: 100%;
+  }
+}
+
+.card.third {
+  @include mixins.media-tablet {
+    display: none;
   }
 }
 

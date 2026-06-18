@@ -1,8 +1,19 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
 .slider {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5.3rem;
+
+  @include mixins.media-tablet {
+    gap: 1.2rem;
+  }
 }
 
 .slider__content {
@@ -10,5 +21,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 9rem;
+
+  @include mixins.media-tablet {
+    gap: 4rem;
+  }
 }
 
