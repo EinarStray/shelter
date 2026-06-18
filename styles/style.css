@@ -353,12 +353,24 @@ h2 {
 .about__wrapper {
   padding: 8rem 4rem 10rem 4rem;
 }
+@media (max-width: 768px) {
+  .about__wrapper {
+    padding: 8rem 16.6rem 10rem 16.5rem;
+  }
+}
 
 .about__container {
   padding: 0 17.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .about__container {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 8rem;
+  }
 }
 
 .about__content {
@@ -370,10 +382,22 @@ h2 {
   padding-bottom: 0.3rem;
   width: 50.5%;
 }
+@media (max-width: 768px) {
+  .about__content {
+    width: 100%;
+    padding-left: 4px;
+  }
+}
 
 .about__title {
   color: #545454;
   width: 80%;
+}
+
+@media (max-width: 768px) {
+  .about__text {
+    width: 98%;
+  }
 }
 
 .pets {
@@ -687,7 +711,7 @@ h2 {
     gap: 2rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .start-screen {
     gap: 3rem;
   }
