@@ -62,7 +62,7 @@
   letter-spacing: 10%;
   padding-top: 1rem;
 
-  @include mixins.media-mobile {
+  @include mixins.media-tablet {
     padding-left: 4px;
   }
 }

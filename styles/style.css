@@ -558,11 +558,22 @@ h2 {
 .donation__wrapper {
   padding: 8rem 18.2rem 10rem 18.3rem;
 }
+@media (max-width: 768px) {
+  .donation__wrapper {
+    padding: 8rem 13.1rem 10rem 13.2rem;
+  }
+}
 
 .donation-container {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+@media (max-width: 768px) {
+  .donation-container {
+    flex-direction: column-reverse;
+    gap: 6.1rem;
+  }
 }
 
 .donation__content {
@@ -572,11 +583,21 @@ h2 {
   justify-content: space-between;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  .donation__content {
+    padding-left: 61px;
+  }
+}
 
 .donation__title {
   color: #545454;
   width: 80%;
   text-align: left;
+}
+@media (max-width: 768px) {
+  .donation__title {
+    width: 70%;
+  }
 }
 
 .donation__text {
@@ -615,6 +636,11 @@ h2 {
   font-family: Arial, sans-serif;
   color: #b2b2b2;
   letter-spacing: 0;
+}
+@media (max-width: 768px) {
+  .donation__info {
+    width: 85%;
+  }
 }
 
 .donation__img {
@@ -726,7 +752,7 @@ h2 {
   letter-spacing: 10%;
   padding-top: 1rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .logo__text {
     padding-left: 4px;
   }

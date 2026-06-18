@@ -11,12 +11,21 @@
 
 .donation__wrapper {
   padding: 8rem 18.2rem 10rem 18.3rem;
+
+  @include mixins.media-tablet {
+    padding: 8rem 13.1rem 10rem 13.2rem;
+  }
 }
 
 .donation-container {
   display: flex;
   align-items: center;
   gap: 3rem;
+
+  @include mixins.media-tablet {
+    flex-direction: column-reverse;
+    gap: 6.1rem;
+  }
 }
 
 .donation__content {
@@ -25,12 +34,20 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
+
+  @include mixins.media-tablet {
+    padding-left: 61px;
+  }
 }
 
 .donation__title {
   color: constants.$color-text-dark-h2;
   width: 80%;
   text-align: left;
+
+  @include mixins.media-tablet {
+    width: 70%;
+  }
 }
 
 .donation__text {
@@ -57,6 +74,10 @@
   @include mixins.font(400, 1.2rem, 18px, $style: italic);
   color: constants.$color-text-dark-info;
   letter-spacing: 0;
+
+  @include mixins.media-tablet {
+    width: 85%;
+  }
 }
 
 .donation__img {
