@@ -7,6 +7,10 @@
 
 .help__wrapper {
   padding: 7.5rem 4rem 10rem 4rem;
+
+  @include mixins.media-tablet {
+    padding: 7.7rem 6.9rem 10rem;
+  }
 }
 
 .help__container {
@@ -16,18 +20,42 @@
   align-items: center;
   gap: 6rem;
   padding: 0 8.7rem;
+
+  @include mixins.media-tablet {
+    padding: 0;
+  }
 }
 
 .help__title {
   color: constants.$color-text-dark-h2;
   width: 35%;
   text-align: center;
+
+  @include mixins.media-tablet {
+    width: 50%;
+  }
 }
 
-.help__grid {
+.help__flex {
   display: flex;
   flex-direction: column;
   gap: 5.5rem;
+
+  @include mixins.media-tablet {
+    display: none;
+  }
+}
+
+.help__grid {
+  display: none;
+
+  @include mixins.media-tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6.4rem;
+    grid-row-gap: 5.4rem;
+  }
 }
 
 .grid-row-top, .grid-row-bottom {

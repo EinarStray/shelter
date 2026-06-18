@@ -468,6 +468,11 @@ h2 {
 .help__wrapper {
   padding: 7.5rem 4rem 10rem 4rem;
 }
+@media (max-width: 768px) {
+  .help__wrapper {
+    padding: 7.7rem 6.9rem 10rem;
+  }
+}
 
 .help__container {
   display: flex;
@@ -477,17 +482,45 @@ h2 {
   gap: 6rem;
   padding: 0 8.7rem;
 }
+@media (max-width: 768px) {
+  .help__container {
+    padding: 0;
+  }
+}
 
 .help__title {
   color: #545454;
   width: 35%;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .help__title {
+    width: 50%;
+  }
+}
 
-.help__grid {
+.help__flex {
   display: flex;
   flex-direction: column;
   gap: 5.5rem;
+}
+@media (max-width: 768px) {
+  .help__flex {
+    display: none;
+  }
+}
+
+.help__grid {
+  display: none;
+}
+@media (max-width: 768px) {
+  .help__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6.4rem;
+    grid-row-gap: 5.4rem;
+  }
 }
 
 .grid-row-top, .grid-row-bottom {
