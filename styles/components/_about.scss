@@ -15,6 +15,10 @@
   @include mixins.media-tablet {
     padding: 8rem 16.6rem 9rem 16.5rem;
   }
+
+  @include mixins.media-mobile {
+    padding: 4.2rem 1rem 3.6rem;
+  }
 }
 
 .about__container {
@@ -27,6 +31,10 @@
     flex-direction: column-reverse;
     padding: 0;
     gap: 8rem;
+  }
+
+  @include mixins.media-mobile {
+    gap: 3.6rem;
   }
 }
 
@@ -41,17 +49,33 @@
 
   @include mixins.media-tablet {
     width: 100%;
-    padding-left: 4px;
+    padding: 0 1.5rem;
   }
 }
 
 .about__title {
   color: constants.$color-text-dark-h2;
   width: 80%;
+
+  @include mixins.media-mobile {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .about__text {
   @include mixins.media-tablet {
     width: 98%;
+  }
+}
+
+.about__img {
+  padding-top: 4px;
+
+  img {
+    @include mixins.media-mobile {
+      padding-left: 2.1rem;
+      width: 93.5%;
+    }
   }
 }

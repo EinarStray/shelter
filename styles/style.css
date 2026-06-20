@@ -190,7 +190,7 @@ body {
   color: #4c4c4c;
   letter-spacing: 0;
   margin: 0 auto;
-  text-align: left;
+  text-align: start;
 }
 
 p, ul {
@@ -227,6 +227,16 @@ h2 {
   color: #ffffff;
   letter-spacing: 6%;
   margin: 0;
+}
+@media (max-width: 320px) {
+  h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 130%;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 6%;
+  }
 }
 
 .button {
@@ -391,6 +401,11 @@ h2 {
     padding: 8rem 16.6rem 9rem 16.5rem;
   }
 }
+@media (max-width: 320px) {
+  .about__wrapper {
+    padding: 4.2rem 1rem 3.6rem;
+  }
+}
 
 .about__container {
   padding: 0 17.5rem;
@@ -403,6 +418,11 @@ h2 {
     flex-direction: column-reverse;
     padding: 0;
     gap: 8rem;
+  }
+}
+@media (max-width: 320px) {
+  .about__container {
+    gap: 3.6rem;
   }
 }
 
@@ -418,7 +438,7 @@ h2 {
 @media (max-width: 768px) {
   .about__content {
     width: 100%;
-    padding-left: 4px;
+    padding: 0 1.5rem;
   }
 }
 
@@ -426,10 +446,26 @@ h2 {
   color: #545454;
   width: 80%;
 }
+@media (max-width: 320px) {
+  .about__title {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 @media (max-width: 768px) {
   .about__text {
     width: 98%;
+  }
+}
+
+.about__img {
+  padding-top: 4px;
+}
+@media (max-width: 320px) {
+  .about__img img {
+    padding-left: 2.1rem;
+    width: 93.5%;
   }
 }
 
