@@ -41,3 +41,20 @@
   border: 2px solid constants.$color-text-dark-s;
   pointer-events: none;
 }
+
+.slider__buttons-big {
+  display: flex;
+
+  @include mixins.media-mobile {
+    display: none;
+  }
+}
+
+.slider__buttons-mobile {
+  display: none;
+
+  @include mixins.media-mobile {
+    display: flex;
+    gap: 8rem;
+  }
+}
