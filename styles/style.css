@@ -494,6 +494,12 @@ h2 {
     width: 98%;
   }
 }
+@media (max-width: 320px) {
+  .about__text {
+    width: 100%;
+    text-align: justify;
+  }
+}
 
 .about__img {
   padding-top: 4px;
@@ -705,6 +711,11 @@ h2 {
     padding: 8rem 13.1rem 10rem 13.2rem;
   }
 }
+@media (max-width: 320px) {
+  .donation__wrapper {
+    padding: 4.2rem 1rem;
+  }
+}
 
 .donation-container {
   display: flex;
@@ -715,6 +726,11 @@ h2 {
   .donation-container {
     flex-direction: column-reverse;
     gap: 6.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .donation-container {
+    gap: 4rem;
   }
 }
 
@@ -730,6 +746,11 @@ h2 {
     padding-left: 61px;
   }
 }
+@media (max-width: 320px) {
+  .donation__content {
+    padding-left: unset;
+  }
+}
 
 .donation__title {
   color: #545454;
@@ -741,6 +762,12 @@ h2 {
     width: 70%;
   }
 }
+@media (max-width: 320px) {
+  .donation__title {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
 
 .donation__text {
   font-style: normal;
@@ -750,6 +777,18 @@ h2 {
   font-family: Georgia, sans-serif;
   color: #545454;
   letter-spacing: 6%;
+}
+@media (max-width: 320px) {
+  .donation__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 0;
+    margin-inline: auto;
+    text-align: center;
+  }
 }
 
 .donation__card {
@@ -769,6 +808,18 @@ h2 {
   margin-right: 0.9rem;
   margin-bottom: -0.5rem;
 }
+@media (max-width: 320px) {
+  .donation__card {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 110%;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 6%;
+    margin-inline: auto;
+    text-align: center;
+  }
+}
 
 .donation__info {
   font-style: italic;
@@ -784,10 +835,23 @@ h2 {
     width: 85%;
   }
 }
+@media (max-width: 320px) {
+  .donation__info {
+    margin-inline: auto;
+    text-align: justify;
+    width: 93%;
+  }
+}
 
 .donation__img {
   display: flex;
   align-items: flex-end;
+}
+@media (max-width: 320px) {
+  .donation__img img {
+    margin-inline: auto;
+    width: 90%;
+  }
 }
 
 .pets-pets {

@@ -67,6 +67,11 @@
   @include mixins.media-tablet {
     width: 98%;
   }
+
+  @include mixins.media-mobile {
+    width: 100%;
+    text-align: justify;
+  }
 }
 
 .about__img {
