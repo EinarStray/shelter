@@ -1131,6 +1131,12 @@ h2 {
     gap: 5.5rem;
   }
 }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    padding: 3rem 1rem 0 1rem;
+    gap: 4.5rem;
+  }
+}
 
 .footer-links {
   display: flex;
@@ -1141,6 +1147,13 @@ h2 {
   .footer-links {
     gap: 3.5rem;
     padding: 0 3.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .footer-links {
+    flex-direction: column;
+    padding: 0;
+    gap: 4.5rem;
   }
 }
 
@@ -1173,9 +1186,24 @@ h2 {
   margin-right: 1.3rem;
   margin-bottom: -0.8rem;
 }
+@media (max-width: 320px) {
+  .footer__item {
+    margin-inline: auto;
+  }
+}
+
+.footer__title {
+  text-align: center;
+}
 
 .visit {
   padding-right: 1.44rem;
+}
+@media (max-width: 320px) {
+  .visit {
+    width: 98%;
+    padding: 0;
+  }
 }
 
 .boston__address {
@@ -1194,6 +1222,11 @@ h2 {
 .boston a svg {
   margin-right: 1.8rem;
 }
+@media (max-width: 320px) {
+  .boston {
+    padding-top: 0.5rem;
+  }
+}
 
 .nowrap {
   text-wrap: nowrap;
@@ -1207,6 +1240,11 @@ h2 {
     padding-top: 0.5rem;
   }
 }
+@media (max-width: 320px) {
+  .london {
+    padding-top: 0;
+  }
+}
 
 .footer__img {
   display: flex;
@@ -1215,6 +1253,11 @@ h2 {
 @media (max-width: 768px) {
   .footer__img img {
     margin-inline: auto;
+  }
+}
+@media (max-width: 320px) {
+  .footer__img img {
+    width: 87%;
   }
 }
 

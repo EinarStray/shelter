@@ -22,6 +22,11 @@
     padding: 3rem 3rem 0;
     gap: 5.5rem;
   }
+
+  @include  mixins.media-mobile {
+    padding: 3rem 1rem 0 1rem;
+    gap: 4.5rem;
+  }
 }
 
 .footer-links {
@@ -32,6 +37,12 @@
   @include mixins.media-tablet {
     gap: 3.5rem;
     padding: 0 3.4rem;
+  }
+
+  @include mixins.media-mobile {
+    flex-direction: column;
+    padding: 0;
+    gap: 4.5rem;
   }
 }
 
@@ -58,10 +69,23 @@
       margin-bottom: -0.8rem;
     }
   }
+
+  @include mixins.media-mobile {
+    margin-inline: auto;
+  }
+}
+
+.footer__title {
+  text-align: center;
 }
 
 .visit {
   padding-right: 1.44rem;
+
+  @include mixins.media-mobile {
+    width: 98%;
+    padding: 0;
+  }
 }
 
 .boston__address {
@@ -80,6 +104,10 @@
       margin-right: 1.8rem;
     }
   }
+
+  @include mixins.media-mobile {
+    padding-top: 0.5rem;
+  }
 }
 
 .nowrap {
@@ -92,6 +120,10 @@
   @include mixins.media-tablet {
     padding-top: 0.5rem;
   }
+
+  @include mixins.media-mobile {
+    padding-top: 0;
+  }
 }
 
 .footer__img {
@@ -101,6 +133,10 @@
   img {
     @include mixins.media-tablet {
       margin-inline: auto;
+    }
+
+    @include mixins.media-mobile {
+      width: 87%;
     }
   }
 }
