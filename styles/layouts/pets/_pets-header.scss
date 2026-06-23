@@ -13,6 +13,15 @@
   align-items: center;
   gap: 9rem;
   padding: 3rem 4rem;
+
+  @include mixins.media-tablet {
+    padding: 3rem 3rem 0;
+    gap: 6rem;
+  }
+
+  @include mixins.media-mobile {
+    padding: 3rem 1rem 0;
+  }
 }
 
 .pets-header {
@@ -29,6 +38,23 @@
     h1, p {
       color: constants.$color-text-dark-h2;
     }
+  }
+
+  @include mixins.media-tablet {
+    gap: 8.1rem;
+  }
+
+  @include mixins.media-mobile {
+    padding: 0 1rem;
+    gap: unset;
+  }
+}
+
+.pets-header__wrapper .header__navigation {
+  width: 100%;
+
+  @include mixins.media-mobile {
+    display: none;
   }
 }
 

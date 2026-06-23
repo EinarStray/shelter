@@ -5,14 +5,45 @@
   transition: all 0.2s ease-in-out;
 }
 
-.footer__wrapper {
+.footer {
   background:
           url("../../assets/img/icons/noise_transparent.svg") repeat,
           linear-gradient(135deg, #574635 0%, #020100 100%);
+}
+
+.footer__wrapper {
   display: flex;
   flex-direction: row;
   gap: 16rem;
-  padding: 4rem 4rem 0 4rem;
+  padding: 4rem 4rem 0;
+
+  @include  mixins.media-tablet {
+    flex-direction: column;
+    padding: 3rem 3rem 0;
+    gap: 5.5rem;
+  }
+
+  @include  mixins.media-mobile {
+    padding: 3rem 1rem 0 1rem;
+    gap: 4.5rem;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 13.5rem;
+
+  @include mixins.media-tablet {
+    gap: 3.5rem;
+    padding: 0 3.4rem;
+  }
+
+  @include mixins.media-mobile {
+    flex-direction: column;
+    padding: 0;
+    gap: 4.5rem;
+  }
 }
 
 .footer__content {
@@ -21,6 +52,10 @@
   align-items: flex-start;
   gap: 4rem;
   padding-top: 1.6rem;
+
+  @include mixins.media-tablet {
+    padding: 0;
+  }
 }
 
 .footer__item {
@@ -34,10 +69,31 @@
       margin-bottom: -0.8rem;
     }
   }
+
+  @include mixins.media-mobile {
+    margin-inline: auto;
+  }
+}
+
+.footer__title {
+  text-align: center;
+
+  @include mixins.media-tablet {
+    text-align: start;
+  }
+
+  @include mixins.media-mobile {
+    text-align: center;
+  }
 }
 
 .visit {
   padding-right: 1.44rem;
+
+  @include mixins.media-mobile {
+    width: 98%;
+    padding: 0;
+  }
 }
 
 .boston__address {
@@ -51,6 +107,14 @@
   height: 10%;
   a {
     display: inline-flex;
+
+    svg {
+      margin-right: 1.8rem;
+    }
+  }
+
+  @include mixins.media-mobile {
+    padding-top: 0.5rem;
   }
 }
 
@@ -60,9 +124,27 @@
 
 .london {
   width: 102%;
+
+  @include mixins.media-tablet {
+    padding-top: 0.5rem;
+  }
+
+  @include mixins.media-mobile {
+    padding-top: 0;
+  }
 }
 
 .footer__img {
   display: flex;
   align-items: flex-end;
+
+  img {
+    @include mixins.media-tablet {
+      margin-inline: auto;
+    }
+
+    @include mixins.media-mobile {
+      width: 87%;
+    }
+  }
 }

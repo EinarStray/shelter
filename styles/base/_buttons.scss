@@ -15,6 +15,7 @@
   border: 1px solid constants.$color-primary;
   border-radius: 30px;
   text-decoration: none;
+  @extend %transition;
 }
 
 .button-color {
@@ -39,4 +40,21 @@
   padding: 0;
   border: 2px solid constants.$color-text-dark-s;
   pointer-events: none;
+}
+
+.slider__buttons-big {
+  display: flex;
+
+  @include mixins.media-mobile {
+    display: none;
+  }
+}
+
+.slider__buttons-mobile {
+  display: none;
+
+  @include mixins.media-mobile {
+    display: flex;
+    gap: 8rem;
+  }
 }
