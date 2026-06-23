@@ -1,0 +1,88 @@
+@use "../../abstracts/constants";
+@use "../../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.pets-pets {
+  background: constants.$color-bg-white-dark;
+}
+
+.pets-pets .pets__wrapper {
+  padding: 8rem 4rem 10rem 4rem;
+
+  @include mixins.media-tablet {
+    padding: 6rem 3rem 7.5rem;
+  }
+
+  @include mixins.media-mobile {
+    padding: 7.4rem 1rem 4.2rem;
+  }
+}
+
+.pets-pets {
+  .pets__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+
+    @include mixins.media-tablet {
+      padding: 5rem 6.4rem 0;
+      gap: 2.6rem;
+    }
+
+    @include mixins.media-mobile {
+      padding: 0 1.5rem;
+      gap: 4rem;
+    }
+  }
+
+  .pets__title {
+    color: constants.$color-text-dark-h2;
+    width: 50%;
+    text-align: center;
+
+    @include mixins.media-tablet {
+      width: 68.5%;
+    }
+
+    @include mixins.media-mobile {
+      width: 105%;
+    }
+  }
+
+  .pets__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+    row-gap: 3rem;
+
+    @include mixins.media-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 2.4rem;
+      padding-bottom: 1.3rem;
+    }
+
+    @include mixins.media-mobile {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 2.8rem;
+      padding-bottom: 0;
+    }
+  }
+
+  .grid-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @include mixins.media-mobile {
+      gap: 1rem;
+    }
+  }
+}

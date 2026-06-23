@@ -1,0 +1,43 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include mixins.font(400, 1.5rem, 160%);
+  color: constants.$color-text-dark;
+  letter-spacing: 0;
+  margin: 0 auto;
+  text-align: start;
+}
+
+p, ul {
+  margin: 0;
+}
+
+h1 {
+  @include mixins.font(400, 4.4rem, 130%, Georgia);
+  color: constants.$color-white;
+  letter-spacing: 0;
+  margin: 0;
+
+  @include mixins.media-mobile {
+    @include mixins.font(400, 2.5rem, 130%, Georgia);
+    letter-spacing: 6%;
+  }
+}
+
+h2 {
+  @include mixins.font(400, 3.5rem, 130%, Georgia);
+  color: constants.$color-white;
+  letter-spacing: 6%;
+  margin: 0;
+
+  @include mixins.media-mobile {
+    @include mixins.font(400, 2.5rem, 130%, Georgia);
+    letter-spacing: 6%;
+  }
+}
