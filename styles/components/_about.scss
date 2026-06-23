@@ -30,7 +30,7 @@
   @include mixins.media-tablet {
     flex-direction: column-reverse;
     padding: 0;
-    gap: 8rem;
+    gap: 7.4rem;
   }
 
   @include mixins.media-mobile {
@@ -49,7 +49,7 @@
 
   @include mixins.media-tablet {
     width: 100%;
-    padding: 0 1.5rem;
+    padding-left: 4px;
   }
 }
 
@@ -69,7 +69,8 @@
   }
 
   @include mixins.media-mobile {
-    width: 100%;
+    width: 95%;
+    padding-left: 11px;
     text-align: justify;
   }
 }

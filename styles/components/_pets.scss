@@ -16,7 +16,7 @@
     padding: 8rem 3rem 10rem;
   }
 
-  @include mixins.media-tablet {
+  @include mixins.media-mobile {
     padding: 4.2rem 1rem;
   }
 }

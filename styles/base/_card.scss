@@ -56,3 +56,33 @@ display: flex;
     width: unset;
   }
 }
+
+.pets-pets {
+  @include mixins.media-tablet {
+    .card:nth-child(n + 7) {
+      display: none;
+    }
+  }
+
+  @include mixins.media-mobile {
+    .card:nth-child(n + 4) {
+      display: none;
+    }
+  }
+}
+
+.pets-pets .card {
+  @include mixins.media-tablet {
+    gap: 2.9rem;
+  }
+
+  @include mixins.media-mobile {
+    gap: 2.7rem;
+  }
+
+  .card__name {
+    @include mixins.media-tablet {
+      padding-bottom: 0.2rem;
+    }
+  }
+}

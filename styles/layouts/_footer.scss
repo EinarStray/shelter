@@ -77,6 +77,14 @@
 
 .footer__title {
   text-align: center;
+
+  @include mixins.media-tablet {
+    text-align: start;
+  }
+
+  @include mixins.media-mobile {
+    text-align: center;
+  }
 }
 
 .visit {
