@@ -5,4 +5,12 @@
   max-width: constants.$content-width;
   margin: 0 auto;
   overflow-x: hidden;
+
+  @include mixins.media-tablet {
+    max-width: constants.$tablet-width;
+  }
+
+  @include mixins.media-mobile {
+    max-width: constants.$mobile-width;
+  }
 }

@@ -7,6 +7,14 @@
 
 .help__wrapper {
   padding: 7.5rem 4rem 10rem 4rem;
+
+  @include mixins.media-tablet {
+    padding: 7.7rem 6.9rem 10rem;
+  }
+
+  @include mixins.media-mobile {
+    padding: 4.2rem 1.5rem;
+  }
 }
 
 .help__container {
@@ -16,18 +24,84 @@
   align-items: center;
   gap: 6rem;
   padding: 0 8.7rem;
+
+  @include mixins.media-tablet {
+    padding: 0;
+  }
+
+  @include mixins.media-mobile {
+    gap: 4rem;
+  }
 }
 
 .help__title {
   color: constants.$color-text-dark-h2;
   width: 35%;
   text-align: center;
+
+  @include mixins.media-tablet {
+    width: 50%;
+  }
+
+  @include mixins.media-mobile {
+    width: 80%;
+  }
 }
 
-.help__grid {
+.help__flex {
   display: flex;
   flex-direction: column;
   gap: 5.5rem;
+
+  @include mixins.media-tablet {
+    display: none;
+  }
+}
+
+.help__flex-small {
+  display: none;
+  flex-direction: row;
+  gap: 4rem;
+  padding-left: 4px;
+
+  @include mixins.media-mobile {
+    display: flex;
+  }
+
+  .col-left, .col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 5px;
+  }
+}
+
+.col-left {
+  img {
+    width: 47%;
+  }
+}
+
+.col-right {
+  img {
+    width: 41%;
+  }
+}
+
+.help__grid {
+  display: none;
+
+  @include mixins.media-tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6.4rem;
+    grid-row-gap: 5.4rem;
+  }
+
+  @include mixins.media-mobile {
+    display: none;
+  }
 }
 
 .grid-row-top, .grid-row-bottom {
@@ -45,6 +119,10 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
+  @include mixins.media-mobile {
+    gap: 1.9rem;
+  }
 }
 
 .item__title {
@@ -52,4 +130,8 @@
   color: constants.$color-text-dark-h2;
   letter-spacing: 6%;
   text-wrap: nowrap;
+
+  @include mixins.media-mobile {
+    @include mixins.font(400, 1.5rem, 115%, Georgia);
+  }
 }

@@ -11,7 +11,7 @@ body {
   color: constants.$color-text-dark;
   letter-spacing: 0;
   margin: 0 auto;
-  text-align: left;
+  text-align: start;
 }
 
 p, ul {
@@ -23,7 +23,11 @@ h1 {
   color: constants.$color-white;
   letter-spacing: 0;
   margin: 0;
-  text-align: left;
+
+  @include mixins.media-mobile {
+    @include mixins.font(400, 2.5rem, 130%, Georgia);
+    letter-spacing: 6%;
+  }
 }
 
 h2 {
@@ -31,4 +35,9 @@ h2 {
   color: constants.$color-white;
   letter-spacing: 6%;
   margin: 0;
+
+  @include mixins.media-mobile {
+    @include mixins.font(400, 2.5rem, 130%, Georgia);
+    letter-spacing: 6%;
+  }
 }

@@ -1,0 +1,44 @@
+@use "../abstracts/constants";
+@use "../abstracts/mixins";
+
+%transition {
+  transition: all 0.2s ease-in-out;
+}
+
+%hamburger-line {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background: constants.$color-primary;
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 22px;
+
+  &:before {
+    @extend %transition;
+    @extend %hamburger-line;
+    top: 0;
+  }
+
+  &:after {
+    @extend %transition;
+    @extend %hamburger-line;
+    top: 100%
+  }
+
+  @include mixins.media-mobile {
+    display: inline-block;
+  }
+}
+
+.hamburger__line {
+  @extend %transition;
+  @extend %hamburger-line;
+  top: 11px;
+}
