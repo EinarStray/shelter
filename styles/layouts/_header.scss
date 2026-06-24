@@ -70,7 +70,7 @@
 .header__navigation {
   width: 100%;
 
-  @include mixins.media-mobile {
+  @media (max-width: 767px) {
     display: none;
   }
 }

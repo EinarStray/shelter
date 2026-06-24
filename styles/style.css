@@ -442,7 +442,7 @@ h2 {
 .hamburger:after {
   top: 100%;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .hamburger {
     display: inline-block;
   }
@@ -1048,7 +1048,7 @@ h2 {
 .header__navigation {
   width: 100%;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .header__navigation {
     display: none;
   }
